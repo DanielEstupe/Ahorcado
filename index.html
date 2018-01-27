@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Divierte con el juego más cool de la historia, Ahorcado." />
+		<meta name="keywords" content="juego, ahorcado, diversion" />
+		<title>Ahorcado</title>
+    <script src="script/jquery-3.1.0.min.js"></script>
+    <script src="script/ahorcado.js"></script>
+		<link rel="stylesheet" href="style/ahorcado.css" />
+    <link rel="shortcut icon" href="img/hangman.jpg" />
+	</head>
+	<body>
+        <header id="header">
+            <div id="nameGame">
+                <h1>Ahorcado</h1>
+            </div>
+        </header>
+        <section id="game">
+            <div id="contentAhorcado">
+                <canvas id="ahorcado"></canvas>
+            </div>
+            <article id="player_1" class="windowPlayer">
+                <div id="data">
+                    <header class="titlePlayer">
+                  		<h1>Player 1</h1>
+                    </header>
+                    <input type="password" pattern="[A-Za-z]{10}" name="letter" id="letter" placeholder="Ingresa cualquier palabra" autofocus="autofocus"/><br/><br/>
+                    <button id="play">Listo</button>
+                </div>
+            </article>
+            <article id="player_2" class="windowPlayer">
+                <header class="titlePlayer">
+                    <h1>Player 2</h1>
+                </header>
+                <div id="showLetters">
+
+                </div>
+            </article>
+            <article id="lose">
+                <div id="contentLose">
+                    <h2></h2><br/>
+				    <p>Palabra:<span id="word"></span></p> <br/> <br/>
+                    <figure>
+                        <img src="img/ahoracado.jpg" alt="Ahorcado" title="Ahorcado" />
+                    </figure>
+                    <a href="index.html">
+                        <button>Jugar otra vez</button>
+                    </a>
+                </div>
+            </article>
+        </section>
+	</body>
+</html>

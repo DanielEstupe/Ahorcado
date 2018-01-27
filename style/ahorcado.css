@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    background-color: darkseagreen;
+    color: white;
+    padding: 0.8em;
+}
+#nameGame, #navegation{
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
+}
+#nameGame{
+    margin: 0px;
+    padding: 0px;
+}
+#navegation{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+#navegation ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#navegation ul li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+#navegation ul li:first-child ~ li {
+    margin-left: 4em;
+}
+#contentAhorcado{
+    margin: 10px auto;
+    width: 50%;
+}
+#ahorcado{
+    width: 100%;
+    height: 20em;
+    background-color: azure;
+    margin: 10px;
+}
+.windowPlayer{
+    background-color: rgba(150, 200, 80, 0.3);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 50em;
+    border-radius: 5px;   
+    position: relative;
+    height: 10em;
+    text-align: center;
+    font-family: monospace;
+    color: dimgrey;
+}
+.titlePlayer{
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+#player_1 input{
+    width: 15em;
+    height: 1.8em;
+    border-radius: 5px;
+    text-align: center;
+}
+#player_1 button, #lose button{
+    width: 8em;
+    height: 3em;
+    border-radius: 5px;
+    background-color: forestgreen;
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 1em;
+}
+#player_2{
+    display: none;
+}
+
+.letters{
+    width: 5%;
+    height: 2em;
+    margin: 5px;
+    background-color: white;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#lose{
+    background-color: rgba(100, 100, 100, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    text-align: center;
+    top: 0px;
+    display: none;
+}
+#lose h2{
+    font-size: 1em;
+    font-family: cursive;
+    color: rgba(250, 250, 250, 0.9);
+    margin: 0px;
+}
+#lose p{
+	color: azure;
+	font-size: 1.2em;
+	margin: 4px;
+	font-weight: bold;
+    display: none;
+}
+#lose p #word{
+	font-size: 1em;
+    color: rgb(120, 250, 70);
+    /*rgb(120, 130, 185);*/
+} 
+#lose figure img{
+    width: 50%;
+    height: 25%;
+    border-radius: 5px;
+    margin: 5px;
+}
+#lose button{
+    margin-top: 15px;
+}
